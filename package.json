@@ -1,0 +1,30 @@
+{
+  "name": "portofolio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
+    "test:unit": "cypress run --component",
+    "test:unit:dev": "cypress open --component"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "core-js": "^3.26.1",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "cypress": "^11.2.0",
+    "start-server-and-test": "^1.14.0",
+    "vite": "^3.2.4"
+  }
+}
